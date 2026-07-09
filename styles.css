@@ -1,0 +1,223 @@
+:root {
+  --forest: #cfe4be;
+  --forest-dark: #f7f0de;
+  --forest-bright: #e4f0cf;
+  --stone: #cda06b;
+  --paper: #151d19;
+  --paper-soft: #213429;
+  --accent: #8ab96a;
+  --accent-soft: #b6d995;
+  --border: #4c6755;
+  --shadow: rgba(0, 0, 0, 0.4);
+}
+
+/* Base page theme */
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, #101713, #1d2a22);
+  color: #f8f0de;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 2px solid var(--accent-soft);
+}
+
+nav a {
+  text-decoration: none;
+  color: #f8f0de;
+  font-weight: 700;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+}
+
+nav a:hover {
+  background: rgba(140, 94, 45, 0.12);
+}
+
+/* Global link styles — use light text instead of default blue */
+a, a:visited {
+  color: #f8f0de;
+}
+
+a:hover, a:focus {
+  color: var(--accent-soft);
+  text-decoration: underline;
+}
+
+/* Main headings */
+h1,
+h2 {
+  color: var(--forest);
+  font-family: "Palatino Linotype", "Book Antiqua", serif;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Section card grid */
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0;
+}
+
+.section-card {
+  background: var(--paper-soft);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 3px 10px var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-card summary {
+  cursor: pointer;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--forest);
+  padding: 0.7rem 0.8rem;
+  list-style: none;
+  background: var(--paper-soft);
+  text-align: center;
+}
+
+.section-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.card-content {
+  padding: 0 0.7rem 0.7rem;
+  flex: 1 1 auto;
+}
+
+.timeline-card {
+  margin-top: 0;
+}
+
+@media (max-width: 800px) {
+  .section-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .section-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Travel dropdowns */
+.trip-events {
+  padding-left: 1rem;
+}
+
+.trip-event {
+  margin-bottom: 0.75rem;
+}
+
+.trip-event details {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--paper);
+  padding: 0.4rem 0.55rem;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.trip-event summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--forest);
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0.18rem 0.3rem;
+  border-radius: 5px;
+  background: rgba(140, 94, 45, 0.08);
+}
+
+.trip-event summary:hover {
+  color: var(--accent);
+}
+
+.trip-event summary::-webkit-details-marker {
+  display: none;
+}
+
+.trip-event ul {
+  margin-top: 0.6rem;
+  padding-left: 1.2rem;
+}
+
+.rental-car-item {
+  margin-top: 0.2rem;
+}
+
+.inline-details {
+  display: inline-block;
+}
+
+.inline-details summary {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--forest);
+  list-style: none;
+  cursor: pointer;
+  padding: 0.1rem 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.inline-details summary::-webkit-details-marker {
+  display: none;
+}
+
+..inline-details ul {
+  margin: 0.3rem 0 0 0.8rem;
+  padding-left: 0.8rem;
+}
+
+/* Trip timeline cards */
+#timeline {
+  margin-top: 0.6rem;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.timeline-item {
+  border-left: 4px solid var(--accent);
+  padding: 0.5rem 0.8rem;
+  background: #151d19;
+  border-radius: 8px;
+}
+
+.timeline-item h3 {
+  margin: 0 0 0.25rem;
+  color: var(--forest);
+  font-size: 0.95rem;
+}
+
+.timeline-item p {
+  margin: 0.12rem 0;
+  font-size: 0.92rem;
+}

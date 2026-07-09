@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Scotland Trip</title>
+
+</head>
+<nav>
+    <a href="#travel">Travel</a>
+    <a href="#lodging">Lodging</a>
+    <a href="#itinerary">Itinerary</a>
+    <a href="#food">Food</a>
+    <a href="#thingstobuy">Things to Buy</a>
+    <a href="#timeline-section">Timeline</a>
+</nav>
+<main>
+    <h1>Jeff & Sabrina's Trip to Scotland</h1>
+
+    <div class="section-grid">
+        <details class="section-card" id="travel">
+            <summary>Travel Info</summary>
+            <div class="card-content">
+                <ol class="trip-events">
+                    <li class="trip-event">
+                        <details>
+                            <summary>Fly from Sacramento to Toronto</summary>
+                            <ul>
+                                <li>Airlines: Air Canada</li>
+                                <li>Flight #: AC 798</li>
+                                <li>Reservation #: CY3EKJ </li>
+                                <li>Seats:29A & 29C</li>
+                                <li>Departure: <time class="departure" datetime="2026-07-09T07:55">July 9th, 7:55am</time>, SMF Terminal A</li>
+                                <li>Arrival: <time class="arrival" datetime="2026-07-09T15:39">July 9th, 15:39 (3:39pm)</time>, YYZ Terminal 1</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="trip-event">
+                        <details>
+                            <summary>Fly from Toronto to Edinburgh</summary>
+                            <ul>
+                                <li>Airlines: WestJet</li>
+                                <li>Flight #: WS 0036</li>
+                                <li>Reservation #: FOXPCM</li>
+                                <li>Seats: 24E & 24F</li>
+                                <li>Departure: <time class="departure" datetime="2026-07-10T22:15">July 10th, 22:15(10:15pm)</time>, YYZ</li>
+                                <li>Arrival: <time class="arrival" datetime="2026-07-11T10:10">July 11th, 10:10am</time>, EDI</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="trip-event">
+                        <details>
+                            <summary>Train from Edinburgh to London</summary>
+                            <ul>
+                                <li>Train Company: LNER</li>
+                                <li>Seats: A45 & A46</li>
+                                <li>Departure: <time class="departure" datetime="2026-07-14T13:30">July 14th, 13:30(1:30pm)</time>, EDB</li>
+                                <li>Arrival: <time datetime="2026-07-14T18:01">July 14th, 18:01(6:01pm)</time>, KGX</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="trip-event">
+                        <details>
+                            <summary>Fly from London to Reykjavik</summary>
+                            <ul>
+                                <li>Airlines: Icelandair</li>
+                                <li>Flight #: FI473 </li>
+                                <li>Reservation #: CWERK9</li>
+                                <li>Seats: 27A & 27B</li>
+                                <li>Departure: <time class="departure" datetime="2026-07-16T15:40">July 16th, 3:40PM (15:40)</time>, LGW</li>
+                                <li>Arrival: <time class="arrival" datetime="2026-07-16T17:55">July 16th, 5:55PM (17:55)</time>, KEF</li>
+                                <li class="rental-car-item">
+                                    <details class="inline-details">
+                                        <summary>Rental Car</summary>
+                                        <ul>
+                                            <li>Company: Europcar (through Booking.com)</li>
+                                            <li>Reservation #: 782459532</li>
+                                            <li>Pickup: <time datetime="2026-07-16T18:00">July 16th, 6:00PM (18:00)</time>, KEF</li>
+                                            <li>Dropoff: <time datetime="2026-07-18T09:00">July 18th, 9:00AM, KEF</time></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="trip-event">
+                        <details>
+                            <summary>Fly from Reykjavik to Portland</summary>
+                            <ul>
+                                <li>Airlines: Icelandair</li>
+                                <li>Flight #: FI663</li>
+                                <li>Reservation #: CBY8YA</li>
+                                <li>Seats: 31E & 31F</li>
+                                <li>Departure: <time class="departure" datetime="2026-07-18T10:40">July 18th, 10:40AM, KEF</time></li>
+                                <li>Arrival: <time class="arrival" datetime="2026-07-18T11:45">July 18th, 11:45AM, PDX</time></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="trip-event">
+                        <details>
+                            <summary>Fly from Portland to Sacramento</summary>
+                            <ul>
+                                <li>Airlines: Southwest</li>
+                                <li>Flight #: WN423</li>
+                                <li>Reservation #: CC5S7E</li>
+                                <li>Seats: 25A & 25B</li>
+                                <li>Departure: <time class="departure" datetime="2026-07-18T20:20">July 18th, 8:20PM, PDX</time></li>
+                                <li>Arrival: <time class="arrival" datetime="2026-07-18T21:50">July 18th, 9:50PM, SMF</time></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ol>
+            </div>
+        </details>
+
+        <details class="section-card" id="lodging">
+            <summary>Lodging Info</summary>
+            <div class="card-content">
+                <ol class="trip-events">
+                    <li class="trip-event">
+                        <details>
+                            <summary>Toronto</summary>
+                            <ul>
+                                <li>Hotel: Union Hotel</li>
+                                <li>Website: <a href="https://www.unionhoteltoronto.com" target="_blank">Union Hotel Toronto</a></li>
+                                <li>Booking Method: Hotel Tonight</li>
+                                <li>Address: 60 York St, Toronto, Ontario M5J 1S8</li>
+                                <li>Check-in: <time class="departure" datetime="2026-07-09T17:00">July 9th, 5:00PM</time></li>
+                                <li>Check-out: <time class="arrival" datetime="2026-07-10T11:00">July 10th, 11:00AM</time></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="trip-event">
+                        <details>
+                            <summary>Edinburgh</summary>
+                            <ul>
+                                <li>Hotel: Linton Collection North Bridge Lofts</li>
+                                <li>Website: <a href="https://lintoncollection.com/north-bridge-lofts-guest/" target="_blank">North Bridge Lofts Guest Information</a></li>
+                                <li>Booking Method: Direct</li>
+                                <li>Address: 28 North Bridge</li>
+                                <li>Entry Code: 5925</li>
+                                <li>Check-in: <time class="departure" datetime="2026-07-11T15:00">July 11th, 3:00PM</time></li>
+                                <li>Check-out: <time class="arrival" datetime="2026-07-14T11:00">July 14th, 11:00AM</time></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="trip-event">
+                        <details>
+                            <summary>London</summary>
+                            <ul>
+                                <li>Hotel Tonight!</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="trip-event">
+                        <details>
+                            <summary>Reykjavik</summary>
+                            <ul>
+                                <li>Hotel: Midtown Reykjavik by Heimaleiga</li>
+                                <li>Website: <a href="https://www.heimaleiga.is/en/midtown-reykjavik" target="_blank">Midtown Reykjavik by Heimaleiga</a></li>
+                                <li>Booking Method: Booking.com</li>
+                                <li>Address: Vegamótastígur 9 (entrance on Grettisgata), 101 Reykjavík, Iceland</li>
+                                <li>Check-in: <time class="departure" datetime="2026-07-16T18:30">July 16th, 6:30PM</time></li>
+                                <li>Check-out: <time class="arrival" datetime="2026-07-18T09:00">July 18th, 9:00AM</time></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ol>
+            </div>
+        </details>
+
+        <details class="section-card" id="itinerary">
+            <summary>Itinerary</summary>
+            <div class="card-content">
+                <div class="itinerary">
+                    <div class="city-block">
+                        <h3>Edinburgh</h3>
+                        <ol class="trip-events">
+                            <li class="trip-event">
+                                <details>
+                                    <summary>7-11 Garbage</summary>
+                                    <ul>
+                                        <li>When: <time datetime="2026-07-11T18:45">18:45 PM</time></li>
+                                        <li>Where: Edinburgh Castle</li>
+                                        <li>Seats: GA Standing Room</li>
+                                        <li>Vendor: Ticketmaster UK</li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li class="trip-event">
+                                <details>
+                                    <summary>7-12 Castlehill Experience Dinner</summary>
+                                    <ul>
+                                        <li>When: <time datetime="2026-07-12T16:00">16:00 PM:</time></li>
+                                        <li>Where: Scotch Whisky Experience, Castlehill, Edinburgh</li>
+                                        <li>Vendor: AXS</li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li class="trip-event">
+                                <details>
+                                    <summary>7-12 Critical Role Live</summary>
+                                    <ul>
+                                        <li>When: <time datetime="2026-07-12T17:30">17:30 PM</time></li>
+                                        <li>Where: Edinburgh Castle</li>
+                                        <li>Seats: Section 2 U22 & U23</li>
+                                        <li>Vendor: AXS</li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li class="trip-event">
+                                <details>
+                                    <summary>7-13 Exploring</summary>
+                                    <ul>
+                                        <li>Ocean?</li>
+                                        <li>Tattoo?</li>
+                                        <li>Book Stores?</li>
+                                        <li>Sleep?</li>
+                                    </ul>
+                                </details>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="city-block">
+                        <h3>London</h3>
+                        <ol class="trip-events">
+                            <li class="trip-event">
+                                <details>
+                                    <summary>7-15 — Victoria & Albert Museum</summary>
+                                    <ul>
+                                        <li>British Museum visit</li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li class="trip-event">
+                                <details>
+                                    <summary>7-15 — Abbey Road</summary>
+                                    <ul>
+                                        <li>Abbey Road Studios visit</li>
+                                    </ul>
+                                </details>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="city-block">
+                        <h3>Reykjavik</h3>
+                        <ol class="trip-events">
+                            <li class="trip-event">
+                                <details>
+                                    <summary>7-17 — Hot Springs</summary>
+                                    <ul>
+                                        <li>Blue Lagoon or.. ?</li>
+                                    </ul>
+                                </details>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="section-card" id="food">
+            <summary>Food</summary>
+            <div class="card-content">
+                <a href="https://docs.google.com/spreadsheets/d/1lztnkV40DjWcvOGmaIimH6w7oBXc4s9FiEXi-_lnF58/htmlview#gid=0" target="_blank">Food & Restaurant Ideas Spreadsheet</a>
+            </div>
+        </details>
+
+        <details class="section-card" id="thingstobuy">
+            <summary>Things to Buy</summary>
+            <div class="card-content">
+                <form class="buy-checklist">
+                    <h4>Books & Guides</h4>
+                    <ul>
+                        <li><label><input type="checkbox"> Local history / guidebooks</label></li>
+                        <li><label><input type="checkbox"> Scottish authors / novels</label></li>
+                        <li><label><input type="checkbox"> Map or walking guide</label></li>
+                    </ul>
+
+                    <h4>Trinkets & Souvenirs</h4>
+                    <ul>
+                        <li><label><input type="checkbox"> Keychains / magnets</label></li>
+                        <li><label><input type="checkbox"> Small handcrafted items</label></li>
+                        <li><label><input type="checkbox"> Local wool or tartan samples</label></li>
+                    </ul>
+
+                    <h4>Postcards & Stationery</h4>
+                    <ul>
+                        <li><label><input type="checkbox"> Postcards (various scenes)</label></li>
+                        <li><label><input type="checkbox"> Nice stamps for postcards</label></li>
+                        <li><label><input type="checkbox"> Local stationery / notecards</label></li>
+                    </ul>
+
+                    <h4>Vintage / Clothing Finds</h4>
+                    <ul>
+                        <li><label><input type="checkbox"> Vintage jackets / coats</label></li>
+                        <li><label><input type="checkbox"> Scarves / hats</label></li>
+                        <li><label><input type="checkbox"> Unique clothing pieces</label></li>
+                    </ul>
+
+                    <h4>Food & Treats</h4>
+                    <ul>
+                        <li><label><input type="checkbox"> Local sweets / biscuits</label></li>
+                        <li><label><input type="checkbox"> Tea or preserves</label></li>
+                        <li><label><input type="checkbox"> Specialty condiments</label></li>
+                    </ul>
+
+                    <h4>Art & Prints</h4>
+                    <ul>
+                        <li><label><input type="checkbox"> Small prints or postcards</label></li>
+                        <li><label><input type="checkbox"> Local artist trinkets</label></li>
+                    </ul>
+                </form>
+            </div>
+        </details>
+
+        <details class="section-card timeline-card" id="timeline-section">
+            <summary>Trip Timeline</summary>
+            <div class="card-content">
+                <div id="timeline"></div>
+            </div>
+        </details>
+        </div>
+
+        <script src="main.js"></script>
+</main>
+<body>
+</body>
+</html>
